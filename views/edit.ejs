@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+</head>
+<body>
+    <h3>emial: <%= user.email %></h3>
+    <form method="post" action="/user/<%= user.id %>?_method=PATCH">
+        <textarea name="username" id="">
+            <%= user.username %>
+        </textarea>
+        <textarea type="password"  name="password" placeholder="enter password"></textarea>
+        <button>edit</button>
+    </form>
+</body>
+</html>
